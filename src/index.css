@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", ui-sans-serif, system-ui, sans-serif;
+  --color-void: #070A10;
+  --color-cyan-glow: #00F0FF;
+  --color-purple-glow: #8A2BE2;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: var(--color-void);
+  color: #FFFFFF;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer components {
+  .glass-container {
+    background: rgba(15, 20, 35, 0.4);
+    backdrop-filter: blur(24px) saturate(200%);
+    -webkit-backdrop-filter: blur(24px) saturate(200%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.7);
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .glass-container:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 240, 255, 0.3);
+    box-shadow: 0 15px 50px -10px rgba(0, 240, 255, 0.2);
+  }
+
+  .glass-sidebar {
+    background: rgba(10, 15, 25, 0.6);
+    backdrop-filter: blur(30px) saturate(180%);
+    -webkit-backdrop-filter: blur(30px) saturate(180%);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .neon-text-cyan {
+    color: var(--color-cyan-glow);
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+  }
+
+  .neon-text-purple {
+    color: var(--color-purple-glow);
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.5);
+  }
+
+  .neon-border-cyan {
+    border-color: var(--color-cyan-glow);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.3);
+  }
+
+  .dir-ltr {
+    direction: ltr;
+  }
+}
+
+/* MathJax custom styling */
+.mjx-chtml {
+  color: var(--color-cyan-glow) !important;
+  font-size: 1.1em !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-void);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan-glow);
+}
+/* 1. إجبار أي حاوية معادلات على السحب الأفقي */
+.custom-scrollbar {
+  overflow-x: auto !important;
+  display: block;
+  width: 100%;
+  /* منع الكلمات من النزول لسطر جديد حتى يشتغل السحب */
+  white-space: nowrap; 
+}
+
+/* 2. تجميل شكل السلاد (Scrollbar) حتى ما يطلع شكله كلاسيكي محرك */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px; /* سمك شريط السحب */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05); /* لون الخلفية مالت الشريط */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to right, #00E5FF, #8A2BE2); /* لون سيان وبنفسجي */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #00E5FF;
+  box-shadow: 0 0 10px rgba(0, 229, 255, 0.5);
+}
+
+/* 3. حل مشكلة MathJax اللي تطلع خارج الحدود */
+mjx-container {
+  display: inline-block !important;
+  margin: 0 !important;
+}
+/* دعم التغويش الزجاجي لمتصفح سفاري */
+.backdrop-blur-xl, .backdrop-blur-md {
+  -webkit-backdrop-filter: blur(20px) !important;
+}
+
+/* حل مشكلة طول الشاشة (100vh) في الآيفون */
+.min-h-screen {
+  min-h: 100vh; /* للمتصفحات العادية */
+  min-h: 100dvh; /* للآيفون - Dynamic Viewport Height */
+}
+
+/* دعم السحب الناعم بصباع واحد في الآيفون */
+.custom-scrollbar {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* حماية المحتوى من القذلة (The Notch) */
+body {
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  padding-right: env(safe-area-inset-right);
+}
