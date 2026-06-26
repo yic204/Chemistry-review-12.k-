@@ -668,15 +668,15 @@ export default function Ch1_Ions_Solutions() {
               <div className="space-y-6">
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">1/ المعادلة بالصيغ (تفاعل استبدال الثنائي):</h6>
-                  <BlockMath math="(NH_4)_2S_{(aq)} + Cd(NO_3)_{2(aq)} \rightarrow CdS_{(s)} + 2NH_4NO_{3(aq)}" />
+                  <BlockMath math={`(NH_4)_2S_{(aq)} + Cd(NO_3)_{2(aq)} \\rightarrow CdS_{(s)} + 2NH_4NO_{3(aq)}`} />
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">2/ المعادلة الايونية العامة:</h6>
-                  <BlockMath math="2\text{NH}_4^+{}_{(\text{aq})} + \text{S}^{2-}{}_{(\text{aq})} + \text{Cd}^{2+}{}_{(\text{aq})} + 2\text{NO}_3^-{}_{(\text{aq})} \rightarrow \text{CdS}_{(\text{s})} + 2\text{NH}_4^+{}_{(\text{aq})} + 2\text{NO}_3^-{}_{(\text{aq})}" />
+                  <BlockMath math={`2NH_4^+_{(aq)} + S^{2-}_{(aq)} + Cd^{2+}_{(aq)} + 2NO_3^-_{(aq)} \\rightarrow CdS_{(s)} + 2NH_4^+_{(aq)} + 2NO_3^-_{(aq)}`} />
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">3/ المعادلة الايونية الصرفة:</h6>
-                  <BlockMath math="Cd^{2+}_{(aq)} + S^{2-}_{(aq)} \rightarrow CdS_{(s)}" />
+                  <BlockMath math={`Cd^{2+_{(aq)}} + S^{2-}_{(aq)} \\rightarrow CdS_{(s)}`} />
                 </div>
               </div>
             }
