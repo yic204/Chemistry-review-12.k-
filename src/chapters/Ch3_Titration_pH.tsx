@@ -68,26 +68,29 @@ const TeacherNote = ({ children, page }: { children: React.ReactNode, page?: str
   </div>
 );
 
-const FormulaBox = ({ children, label, page }: { children: string, label?: string, page?: string | number }) => (
-  <div className="my-10 relative group" dir="ltr">
-    {page && (
-      <div className="absolute -top-3 -left-3 px-2 py-1 bg-white/10 border border-white/20 rounded text-[10px] text-gray-400 font-mono">
-        PAGE {page}
-      </div>
-    )}
-    {label && (
-      <div className="flex items-center justify-end gap-2 mb-4" dir="rtl">
-        <Calculator className="w-5 h-5 text-cyan-500" />
-        <span className="text-sm font-black text-cyan-500 uppercase tracking-[0.3em]">{label}</span>
-      </div>
-    )}
-    <div className="w-full overflow-x-auto custom-scrollbar bg-black/80 rounded-3xl border border-white/10 p-10 transition-all group-hover:border-cyan-500/50 shadow-2xl">
-      <div className="min-w-max flex items-center justify-center text-4xl font-bold text-cyan-300">
-        <BlockMath math={children} />
+const FormulaBox = ({ children, math, label, page }: { children?: string, math?: string, label?: string, page?: string | number }) => {
+  const formulaString = math || children || "";
+  return (
+    <div className="my-10 relative group" dir="ltr">
+      {page && (
+        <div className="absolute -top-3 -left-3 px-2 py-1 bg-white/10 border border-white/20 rounded text-[10px] text-gray-400 font-mono">
+          PAGE {page}
+        </div>
+      )}
+      {label && (
+        <div className="flex items-center justify-end gap-2 mb-4" dir="rtl">
+          <Calculator className="w-5 h-5 text-cyan-500" />
+          <span className="text-sm font-black text-cyan-500 uppercase tracking-[0.3em]">{label}</span>
+        </div>
+      )}
+      <div className="w-full overflow-x-auto custom-scrollbar bg-black/80 rounded-3xl border border-white/10 p-10 transition-all group-hover:border-cyan-500/50 shadow-2xl">
+        <div className="min-w-max flex items-center justify-center text-4xl font-bold text-cyan-300">
+          <BlockMath math={formulaString} />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const SolvedExample = ({ question, solution, page }: { question: React.ReactNode, solution: React.ReactNode, page?: string | number }) => (
   <div className="p-8 pt-16 bg-cyan-500/5 border border-cyan-500/20 rounded-3xl my-10 relative overflow-hidden break-words whitespace-normal leading-relaxed">
@@ -192,8 +195,7 @@ export default function Ch3_Titration_pH_Final() {
             هي عملية تكوين ايون الهيدرونيوم وايون الهيدروكسيد نتيجة انتقال بروتون من جزيئة ماء الى جزيئة ماء اخرى.
           </Definition>
           
-          <FormulaBox page="2">{"\\text{H}_2\\text{O} + \\text{H}_2\\text{O} \\rightleftharpoons \\text{H}_3\\text{O}^+ + \\text{OH}^-"}</FormulaBox>
-
+          <FormulaBox page="2" math={`2H_2O_{(l)} \\rightleftharpoons H_3O^+_{(aq)} + OH^-_{(aq)}`} />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
             <div className="p-8 bg-white/5 rounded-3xl border border-white/10 shadow-xl">
               <h5 className="text-cyan-400 font-black mb-6 flex items-center gap-2">
@@ -213,19 +215,19 @@ export default function Ch3_Titration_pH_Final() {
             </div>
 
             <div className="p-8 bg-cyan-500/5 rounded-3xl border border-cyan-500/20 shadow-xl">
-              <h5 className="text-cyan-400 font-black mb-6 flex items-center gap-2">
+              <h5 className="text-cyan-400 font-black mb-5 flex items-center gap-2">
                 <Calculator className="w-6 h-6" /> ثابت تأين الذاتي للماء
               </h5>
               <p className="text-gray-200 text-xl leading-relaxed mb-6">
-                هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{K}_w" />.
+                هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{Kw}" />.
               </p>
-              <div className="space-y-4 bg-black/40 p-6 rounded-2xl border border-white/5 font-mono text-cyan-300 text-2xl text-center">
-                <BlockMath math="\text{K}_w = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
-                <BlockMath math="\text{K}_w = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
-                <BlockMath math="\text{K}_w = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
-              </div>
-            </div>
-          </div>
+              <div className="space-y-3 bg-black/40 p-6 rounded-2xl border border-white/5 font-mono text-cyan-300 text-1xl text-center">
+                <BlockMath math="\text {Kw} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
+                <BlockMath math="\text {Kw} = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
+                <BlockMath math="\text {Kw} = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
+                </div>
+             </div>
+           </div>
 
           <TeacherNote page="2">
             قيمة ثابت تأين الماء دائما ثابتة عند درجة حرارة <InlineMath math="25 \, ^{\circ}\text{C}" /> ولكن تتغير عن درجات العالية والمنخفضة.
@@ -236,7 +238,7 @@ export default function Ch3_Titration_pH_Final() {
               <thead>
                 <tr className="bg-cyan-900/50 text-white">
                   <th className="p-6 border-b border-white/10 text-xl font-black">درجة الحرارة</th>
-                  <th className="p-6 border-b border-white/10 text-xl font-black text-center"><InlineMath math="\text{K}_w" /></th>
+                  <th className="p-6 border-b border-white/10 text-xl font-black text-center"><InlineMath math="\text{Kw}" /></th>
                 </tr>
               </thead>
               <tbody className="text-gray-300 text-lg font-medium">
@@ -463,7 +465,7 @@ export default function Ch3_Titration_pH_Final() {
             <li>محلول به <InlineMath math="[\text{H}_3\text{O}^+] = 10^{-8}" /> يكون قاعدي في <InlineMath math="11 \times 10^{-14}" />.</li>
             <li>عند إضافة حمض إلى الماء يزداد <InlineMath math="[\text{H}_3\text{O}^+]" /> ويقل <InlineMath math="[\text{OH}^-]" />.</li>
             <li className="text-yellow-400 italic">و رغم ذلك فهو غير حمضي؟ <InlineMath math="2.3 \times 10^{-7} \, \text{M}" /> محلول تركيز كاتيونات الهيدرونيوم فيه يساوي <InlineMath math="10^{-10}" />.</li>
-            <li>يكون محلول حمضي عندما يكون <InlineMath math="[\text{H}_3\text{O}^+] > 1.0 \times 10^{-7}" /> ولكن بشرط أن تكون درجة الحرارة عند <InlineMath math="25 \, ^\circ\text{C}" /> وفي هذه الحالة تكون أكبر من <InlineMath math="\text{K}_w" /> درجة الحرارة أكثر من عند <InlineMath math="25 \, ^\circ\text{C}" /> وبالتالي <InlineMath math="1.0 \times 10^{-14}" />.</li>
+            <li>يكون محلول حمضي عندما يكون <InlineMath math="[\text{H}_3\text{O}^+] > 1.0 \times 10^{-7}" /> ولكن بشرط أن تكون درجة الحرارة عند <InlineMath math="25 \, ^\circ\text{C}" /> وفي هذه الحالة تكون أكبر من <InlineMath math="\text{Kw}" /> درجة الحرارة أكثر من عند <InlineMath math="25 \, ^\circ\text{C}" /> وبالتالي <InlineMath math="1.0 \times 10^{-14}" />.</li>
           </ul>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
@@ -488,9 +490,9 @@ export default function Ch3_Titration_pH_Final() {
                   <th className="p-4 border border-white/10">عند درجة حرارة أكبر من <InlineMath math="25 \, ^\circ\text{C}" /></th>
                 </tr>
                 <tr className="bg-white/5 text-cyan-400">
-                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] = \text{K}_w" /></th>
-                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] < \text{K}_w" /></th>
-                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] > \text{K}_w" /></th>
+                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] = \text{Kw}" /></th>
+                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] < \text{Kw}" /></th>
+                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] > \text{Kw}" /></th>
                 </tr>
               </thead>
               <tbody className="text-gray-300 text-center">
@@ -511,9 +513,9 @@ export default function Ch3_Titration_pH_Final() {
                   <td className="p-4 border border-white/10"><InlineMath math="[\text{OH}^-] = [\text{H}_3\text{O}^+] > 10^{-7}" /></td>
                 </tr>
                 <tr>
-                  <td className="p-4 border border-white/10"><InlineMath math="\text{K}_w = 10^{-14}" /></td>
-                  <td className="p-4 border border-white/10"><InlineMath math="\text{K}_w < 10^{-14}" /></td>
-                  <td className="p-4 border border-white/10"><InlineMath math="\text{K}_w > 10^{-14}" /></td>
+                  <td className="p-4 border border-white/10"><InlineMath math="\text{Kw} = 10^{-14}" /></td>
+                  <td className="p-4 border border-white/10"><InlineMath math="\text{Kw} < 10^{-14}" /></td>
+                  <td className="p-4 border border-white/10"><InlineMath math="\text{Kw} > 10^{-14}" /></td>
                 </tr>
               </tbody>
             </table>
@@ -552,20 +554,20 @@ export default function Ch3_Titration_pH_Final() {
             />
           </div>
         </GlassCard>
-      </section>
+      </section>            
 
       {/* الصفحة 6 */}
       <section id="page-6">
         <GlassCard page="6" title="القوانين الذهبية">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { id: 1, formula: "[\text{OH}^-][\text{H}_3\text{O}^+] = 1 \times 10^{-14}" },
-              { id: 2, formula: "\text{pH} + \text{pOH} = 14" },
-              { id: 3, formula: "\text{pH} = -\log[\text{H}_3\text{O}^+]" },
-              { id: 4, formula: "\text{pOH} = -\log[\text{OH}^-]" },
-              { id: 5, formula: "[\text{H}_3\text{O}^+] = 10^{-\text{pH}}" },
-              { id: 6, formula: "[\text{OH}^-] = 10^{-\text{pOH}}" }
-            ].map(law => (
+          { id: 1, formula: "[\\text{OH}^-][\\text{H}_3\\text{O}^+] = 1 \\times 10^{-14}" },
+          { id: 2, formula: "\\text{pH} + \\text{pOH} = 14" },
+          { id: 3, formula: "\\text{pH} = -\\log[\\text{H}_3\\text{O}^+]" },
+          { id: 4, formula: "\\text{pOH} = -\\log[\\text{OH}^-]" },
+          { id: 5, formula: "[\\text{H}_3\\text{O}^+] = 10^{-\\text{pH}}" },
+          { id: 6, formula: "[\\text{OH}^-] = 10^{-\\text{pOH}}" }
+        ].map(law => (
               <div key={law.id} className="p-6 bg-black/40 rounded-2xl border border-white/10 flex items-center justify-between group hover:border-cyan-500 transition-all">
                 <span className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-black">{law.id}</span>
                 <div className="text-2xl font-mono text-cyan-300" dir="ltr">
@@ -714,7 +716,7 @@ export default function Ch3_Titration_pH_Final() {
 
           <SolvedExample 
             page="8"
-            question={<span>10/ جد تركيز ايون الهيدروكسيد في الماء عندما يكون <InlineMath math="\text{K}_w = 3 \times 10^{-15}" />؟</span>}
+            question={<span>10/ جد تركيز ايون الهيدروكسيد في الماء عندما يكون <InlineMath math="\text{Kw} = 3 \times 10^{-15}" />؟</span>}
             solution={
               <div className="space-y-4" dir="ltr">
                 <BlockMath math="[\text{OH}^-] [\text{H}_3\text{O}^+] = 3 \times 10^{-15}" />
@@ -1239,7 +1241,7 @@ export default function Ch3_Titration_pH_Final() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
              <div className="p-8 bg-white/5 rounded-3xl border border-white/10">
                 <h6 className="text-2xl font-black text-red-400 mb-4">حمض قوي + قاعدة ضعيفة</h6>
-                <p className="text-gray-300 mb-4">تكون نقطة التكافؤ عند <InlineMath math="\text{pH} < 7" /> (وسط حمضي).</p>
+                <p className="text-gray-300 mb-4">تكون نقطة التكافؤ عند <InlineMath math="\\text{pH} < 7" /> (وسط حمضي).</p>
                 <div className="min-h-[10rem] h-auto bg-black/40 rounded-xl flex items-end p-4">
                    <svg viewBox="0 0 100 100" className="w-full h-full">
                       <path d="M 0 90 Q 40 90 50 65 T 100 40" fill="none" stroke="#f87171" strokeWidth="2" />
@@ -1249,7 +1251,7 @@ export default function Ch3_Titration_pH_Final() {
              </div>
              <div className="p-8 bg-white/5 rounded-3xl border border-white/10">
                 <h6 className="text-2xl font-black text-blue-400 mb-4">حمض ضعيف + قاعدة قوية</h6>
-                <p className="text-gray-300 mb-4">تكون نقطة التكافؤ عند <InlineMath math="\text{pH} > 7" /> (وسط قاعدي).</p>
+                <p className="text-gray-300 mb-4">تكون نقطة التكافؤ عند <InlineMath math="\\text{pH} > 7" /> (وسط قاعدي).</p>
                 <div className="min-h-[10rem] h-auto bg-black/40 rounded-xl flex items-end p-4">
                    <svg viewBox="0 0 100 100" className="w-full h-full">
                       <path d="M 0 60 Q 40 60 50 35 T 100 10" fill="none" stroke="#60a5fa" strokeWidth="2" />
@@ -1268,7 +1270,7 @@ export default function Ch3_Titration_pH_Final() {
             page="22"
             label="قانون المعايرة"
           >
-            {"\\frac{M_a V_a}{n_a} = \\frac{M_b V_b}{n_b}"}
+            {"\\\\frac{M_a V_a}{n_a} = \\\\frac{M_b V_b}{n_b}"}
           </FormulaBox>
           <p className="text-center text-gray-400 mb-10" dir="rtl">حيث a ترمز للحمض و b ترمز للقاعدة، و n هي المعاملات في المعادلة الموزونة.</p>
 
@@ -1438,22 +1440,22 @@ export default function Ch3_Titration_pH_Final() {
                <p className="text-2xl font-black text-white break-words whitespace-normal leading-relaxed">أبنائي الطلبة، إليكم ملخص القوانين الذهبية لهذا الفصل:</p>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left font-mono" dir="ltr">
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="[\text{H}_3\text{O}^+][\text{OH}^-] = 10^{-14}" />
+                     <BlockMath math="[\\text{H}_3\\text{O}^+][\\text{OH}^-] = 10^{-14}" />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="\text{pH} + \text{pOH} = 14" />
+                     <BlockMath math="\\text{pH} + \\text{pOH} = 14" />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="\text{pH} = -\log[\text{H}_3\text{O}^+]" />
+                     <BlockMath math="\\text{pH} = -\\log[\\text{H}_3\\text{O}^+]" />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="\text{pOH} = -\log[\text{OH}^-]" />
+                     <BlockMath math="\\text{pOH} = -\\log[\\text{OH}^-]" />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="[\text{H}_3\text{O}^+] = 10^{-\text{pH}}" />
+                     <BlockMath math="[\\text{H}_3\\text{O}^+] = 10^{-\\text{pH}}" />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="[\text{OH}^-] = 10^{-\text{pOH}}" />
+                     <BlockMath math="[\\text{OH}^-] = 10^{-\\text{pOH}}" />
                   </div>
                </div>
                <p className="text-xl text-cyan-400 font-bold mt-8 break-words whitespace-normal leading-relaxed">تذكروا دائماً: الدقة في الحسابات الكيميائية تبدأ من كتابة المعادلة الموزونة بشكل صحيح.</p>
