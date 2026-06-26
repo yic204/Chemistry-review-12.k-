@@ -110,7 +110,7 @@ export default function App() {
     <div className="min-h-screen bg-[#070A10] text-white overflow-hidden selection:bg-cyan-500/30 font-sans" dir="rtl">
       
       {/* القائمة الجانبية (Sidebar) */}
-      <nav className={`fixed top-0 right-0 h-full w-85 z-50 transition-transform duration-500 ease-in-out transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 bg-[#0B0F19]/80 backdrop-blur-2xl border-l border-white/10 shadow-2xl`}>
+      <nav className={`fixed top-0 right-0 h-full w-87 z-50 transition-transform duration-500 ease-in-out transform ${isSidebarOpen ? 'translate-x-0' : 'translate-x-full'} lg:translate-x-0 bg-[#0B0F19]/80 backdrop-blur-2xl border-l border-white/10 shadow-2xl`}>
         <div className="h-full p-8 flex flex-col">
           <div className="flex items-center gap-4 mb-12">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center shadow-[0_0_20px_rgba(0,229,255,0.3)] border border-cyan-400/50">
