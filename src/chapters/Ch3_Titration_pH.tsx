@@ -192,7 +192,7 @@ export default function Ch3_Titration_pH_Final() {
             هي عملية تكوين ايون الهيدرونيوم وايون الهيدروكسيد نتيجة انتقال بروتون من جزيئة ماء الى جزيئة ماء اخرى.
           </Definition>
           
-          <FormulaBox page="2" math="2\\text{H}_2\\text{O}_{(\\text{l})} \\rightleftharpoons \\text{H}_3\\text{O}^+_{(\\text{aq})} + \\text{OH}^-_{(\\text{aq})}" />
+          <FormulaBox page="2" math={`2\\text{H}_2\\text{O}_{(\\text{l})} \\rightleftharpoons \\text{H}_3\\text{O}^+_{(\\text{aq})} + \\text{OH}^-_{(\\text{aq})}`} />
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-10">
             <div className="p-8 bg-white/5 rounded-3xl border border-white/10 shadow-xl">
