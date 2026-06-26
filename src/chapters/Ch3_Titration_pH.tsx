@@ -68,26 +68,29 @@ const TeacherNote = ({ children, page }: { children: React.ReactNode, page?: str
   </div>
 );
 
-const FormulaBox = ({ children, label, page }: { children: string, label?: string, page?: string | number }) => (
-  <div className="my-10 relative group" dir="ltr">
-    {page && (
-      <div className="absolute -top-3 -left-3 px-2 py-1 bg-white/10 border border-white/20 rounded text-[10px] text-gray-400 font-mono">
-        PAGE {page}
-      </div>
-    )}
-    {label && (
-      <div className="flex items-center justify-end gap-2 mb-4" dir="rtl">
-        <Calculator className="w-5 h-5 text-cyan-500" />
-        <span className="text-sm font-black text-cyan-500 uppercase tracking-[0.3em]">{label}</span>
-      </div>
-    )}
-    <div className="w-full overflow-x-auto custom-scrollbar bg-black/80 rounded-3xl border border-white/10 p-10 transition-all group-hover:border-cyan-500/50 shadow-2xl">
-      <div className="min-w-max flex items-center justify-center text-4xl font-bold text-cyan-300">
-        <BlockMath math={children} />
+const FormulaBox = ({ children, math, label, page }: { children?: string, math?: string, label?: string, page?: string | number }) => {
+  const formulaString = math || children || "";
+  return (
+    <div className="my-10 relative group" dir="ltr">
+      {page && (
+        <div className="absolute -top-3 -left-3 px-2 py-1 bg-white/10 border border-white/20 rounded text-[10px] text-gray-400 font-mono">
+          PAGE {page}
+        </div>
+      )}
+      {label && (
+        <div className="flex items-center justify-end gap-2 mb-4" dir="rtl">
+          <Calculator className="w-5 h-5 text-cyan-500" />
+          <span className="text-sm font-black text-cyan-500 uppercase tracking-[0.3em]">{label}</span>
+        </div>
+      )}
+      <div className="w-full overflow-x-auto custom-scrollbar bg-black/80 rounded-3xl border border-white/10 p-10 transition-all group-hover:border-cyan-500/50 shadow-2xl">
+        <div className="min-w-max flex items-center justify-center text-4xl font-bold text-cyan-300">
+          <BlockMath math={formulaString} />
+        </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 const SolvedExample = ({ question, solution, page }: { question: React.ReactNode, solution: React.ReactNode, page?: string | number }) => (
   <div className="p-8 pt-16 bg-cyan-500/5 border border-cyan-500/20 rounded-3xl my-10 relative overflow-hidden break-words whitespace-normal leading-relaxed">
@@ -219,9 +222,9 @@ export default function Ch3_Titration_pH_Final() {
                 هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{K}_w" />.
               </p>
               <div className="space-y-4 bg-black/40 p-6 rounded-2xl border border-white/5 font-mono text-cyan-300 text-2xl text-center">
-                <BlockMath math="\text{K}_w = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
-                <BlockMath math="\text{K}_w = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
-                <BlockMath math="\text{K}_w = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
+                <BlockMath math="\text{K_w} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
+                <BlockMath math="\text{K_w} = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
+                <BlockMath math="\text{K_w} = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
               </div>
             </div>
           </div>
