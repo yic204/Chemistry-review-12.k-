@@ -238,7 +238,7 @@ export default function Ch3_Titration_pH_Final() {
               <thead>
                 <tr className="bg-cyan-900/50 text-white">
                   <th className="p-6 border-b border-white/10 text-xl font-black">درجة الحرارة</th>
-                  <th className="p-6 border-b border-white/10 text-xl font-black text-center"><InlineMath math="\text{K}_w" /></th>
+                  <th className="p-6 border-b border-white/10 text-xl font-black text-center"><InlineMath math="\text{Kw}" /></th>
                 </tr>
               </thead>
               <tbody className="text-gray-300 text-lg font-medium">
