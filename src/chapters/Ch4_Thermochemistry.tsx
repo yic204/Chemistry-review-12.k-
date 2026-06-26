@@ -220,7 +220,7 @@ export default function Ch4_Thermochemistry_Final() {
               <ul className="space-y-4 text-gray-300 font-medium text-lg">
                 <li className="flex items-start gap-2">• التعريف: هو قياس معدل الطاقة الحركية لجسيمات عينة من المادة.</li>
                 <li className="flex items-start gap-2">• العلاقة بين T ومعدل الطاقة الحركية طردية.</li>
-                <li className="flex items-start gap-2">• وحدته: <InlineMath math={`^{\\circ}C`} /> أو <InlineMath math={`K`} />.</li>
+                <li className="flex items-start gap-2">• وحدته: <InlineMath math="^{\circ}\text{C}" /> أو <InlineMath math="\text{K}" />.</li>
                 <li className="flex items-start gap-2">• تقاس مباشرة.</li>
               </ul>
             </div>
@@ -266,7 +266,7 @@ export default function Ch4_Thermochemistry_Final() {
           <h5 className="text-2xl font-black text-white mb-8 border-r-4 border-orange-500 pr-4">العلاقة بين المقياس المئوي والكلفن</h5>
           
           <FormulaBox page="3" label="تحويل درجة الحرارة">
-            {"K = 273 + ^{\circ}\text{C}"}
+            {"K = 273 + ^{\\circ}\\text{C}"}
           </FormulaBox>
 
           <SolvedExample 
@@ -366,7 +366,7 @@ export default function Ch4_Thermochemistry_Final() {
                 <span className="text-gray-300">الفرق بين درجتي الحرارة الابتدائية والنهائية.</span>
               </div>
               <div className="bg-black/40 p-6 rounded-2xl border border-white/5 text-center">
-                <BlockMath math="\\Delta T = T_2 - T_1" />
+                <BlockMath math="\Delta T = T_2 - T_1" />
                 <div className="flex justify-around mt-4 text-sm text-gray-400">
                   <span><InlineMath math="T_2" />: درجة الحرارة النهائية</span>
                   <span><InlineMath math="T_1" />: درجة الحرارة الابتدائية</span>
@@ -394,8 +394,8 @@ export default function Ch4_Thermochemistry_Final() {
                   <td className="p-6 border-l border-white/5 font-mono">1 J = 0.2390 cal</td>
                   <td className="p-6 text-center font-mono">
                     <div className="flex flex-col gap-2">
-                      <InlineMath math="\\frac{1 J}{0.2390 cal}" />
-                      <InlineMath math="\\frac{0.2390 cal}{1 J}" />
+                      <InlineMath math="\frac{1 J}{0.2390 cal}" />
+                      <InlineMath math="\frac{0.2390 cal}{1 J}" />
                     </div>
                   </td>
                 </tr>
@@ -403,8 +403,8 @@ export default function Ch4_Thermochemistry_Final() {
                   <td className="p-6 border-l border-white/5 font-mono">1 cal = 4.184 J</td>
                   <td className="p-6 text-center font-mono">
                     <div className="flex flex-col gap-2">
-                      <InlineMath math="\\frac{1 cal}{4.184 J}" />
-                      <InlineMath math="\\frac{4.184 J}{1 cal}" />
+                      <InlineMath math="\frac{1 cal}{4.184 J}" />
+                      <InlineMath math="\frac{4.184 J}{1 cal}" />
                     </div>
                   </td>
                 </tr>
@@ -422,10 +422,10 @@ export default function Ch4_Thermochemistry_Final() {
             question="1- احسب الحرارة النوعية لمادة تمتص عينة منها كتلتها 35g كمية 48J من الطاقة عند تسخينها من 293K إلى 313K."
             solution={
               <div className="space-y-6 text-xl" dir="ltr">
-                <BlockMath math="\\Delta T = T_2 - T_1" />
-                <BlockMath math="\\Delta T = 313 - 293 = 20K" />
-                <BlockMath math="C_p = \\frac{q}{m \\times \\Delta T}" />
-                <BlockMath math="C_p = \\frac{48 \, J}{35 \, g \\times 20K} = 0.069 \, J/g.K" />
+                <BlockMath math="\Delta T = T_2 - T_1" />
+                <BlockMath math="\Delta T = 313 - 293 = 20K" />
+                <BlockMath math="C_p = \frac{q}{m \times \Delta T}" />
+                <BlockMath math="C_p = \frac{48 \, J}{35 \, g \times 20K} = 0.069 \, J/g.K" />
               </div>
             }
           />
@@ -442,11 +442,11 @@ export default function Ch4_Thermochemistry_Final() {
                   <span>Cp = 4.18 J/g.K</span>
                   <span>D = 1 g/ml</span>
                 </div>
-                <BlockMath math="q = 980 \, KJ \\times 1000 = 980000 \, J" />
-                <BlockMath math="V = 6.2L \\times \\frac{1000 \, mL}{1L} = 6200 \, mL" />
-                <BlockMath math="m = D \\times V = 1 \, g/mL \\times 6200 \, mL = 6200 \, g" />
-                <BlockMath math="\\Delta T = \\frac{q}{m \\times C_p} = \\frac{980000J}{6200 \, g \\times 4.18J/g.K} = 38K" />
-                <BlockMath math="T_2 = \\Delta T + T_1 = 38K + 291K = 329K" />
+                <BlockMath math="q = 980 \, KJ \times 1000 = 980000 \, J" />
+                <BlockMath math="V = 6.2L \times \frac{1000 \, mL}{1L} = 6200 \, mL" />
+                <BlockMath math="m = D \times V = 1 \, g/mL \times 6200 \, mL = 6200 \, g" />
+                <BlockMath math="\Delta T = \frac{q}{m \times C_p} = \frac{980000J}{6200 \, g \times 4.18J/g.K} = 38K" />
+                <BlockMath math="T_2 = \Delta T + T_1 = 38K + 291K = 329K" />
               </div>
             }
           />
@@ -464,8 +464,8 @@ export default function Ch4_Thermochemistry_Final() {
                 <div className="text-sm text-cyan-400 mb-4" dir="rtl">
                   1.0 mol In = 114g = m
                 </div>
-                <BlockMath math="\\Delta T = T_2 - T_1 = 299.5 - 297.5 = 2K" />
-                <BlockMath math="C_p = \\frac{q}{m \\times \\Delta T} = \\frac{53 \, J}{114 \, g \\times 2K} = 0.2324 \, J/g.K" />
+                <BlockMath math="\Delta T = T_2 - T_1 = 299.5 - 297.5 = 2K" />
+                <BlockMath math="C_p = \frac{q}{m \times \Delta T} = \frac{53 \, J}{114 \, g \times 2K} = 0.2324 \, J/g.K" />
               </div>
             }
           />
@@ -475,8 +475,8 @@ export default function Ch4_Thermochemistry_Final() {
             question="4- إذا أضيف 340kJ من الطاقة إلى 1.7L من الزئبق عند درجة حرارة 293K، فما درجة الحرارة النهائية للزئبق بالسيليزي؟ (الحرارة النوعية للزئبق 0.140 J/g.°K وكثافة الزئبق هي 13.60 g/mL)."
             solution={
               <div className="space-y-6 text-xl" dir="ltr">
-                <BlockMath math="m = D \\times V = \\frac{13.60g}{1mL} \\times \\frac{1.7L \\times 1000mL}{1L} = 23120g" />
-                <BlockMath math="\\Delta T = \\frac{q}{C \\cdot m} = \\frac{3.4 \\times 10^5 J}{0.140 \\frac{J}{g.^{\circ}K} \\times 23120g} = 105.04K" />
+                <BlockMath math="m = D \times V = \frac{13.60g}{1mL} \times \frac{1.7L \times 1000mL}{1L} = 23120g" />
+                <BlockMath math="\Delta T = \frac{q}{C \cdot m} = \frac{3.4 \times 10^5 J}{0.140 \frac{J}{g.^{\circ}K} \times 23120g} = 105.04K" />
                 <BlockMath math="105.04K = T_2 - 293" />
                 <BlockMath math="T_2 = 105.04 + 293 = 398.04K" />
                 <div className="p-4 bg-orange-500/20 rounded-xl text-center text-orange-300 font-bold">
@@ -519,7 +519,7 @@ export default function Ch4_Thermochemistry_Final() {
                   </table>
                 </div>
                 <div className="text-2xl font-mono" dir="ltr">
-                  <BlockMath math="C_p = \\frac{q}{\\Delta T \\cdot m} = \\frac{800J}{50.0g \\times 41.6^{\circ}C} = 0.385 \, J/g.^{\circ}K" />
+                  <BlockMath math="C_p = \frac{q}{\Delta T \cdot m} = \frac{800J}{50.0g \times 41.6^{\circ}C} = 0.385 \, J/g.^{\circ}K" />
                 </div>
                 <p className="text-xl text-center text-cyan-400 font-black">والفلز هو النحاس.</p>
               </div>
@@ -571,12 +571,12 @@ export default function Ch4_Thermochemistry_Final() {
             solution={
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-4 bg-black/20 rounded-xl border border-white/5" dir="ltr">
-                  <BlockMath math="C_p = \\frac{q}{m \\times \\Delta T}" />
-                  <BlockMath math="C_p = \\frac{48 \, J}{35g \\times 20 \, K} = 0.06857 \, J/g.K" />
+                  <BlockMath math="C_p = \frac{q}{m \times \Delta T}" />
+                  <BlockMath math="C_p = \frac{48 \, J}{35g \times 20 \, K} = 0.06857 \, J/g.K" />
                 </div>
                 <div className="p-4 bg-orange-500/10 rounded-xl border border-orange-500/20" dir="ltr">
-                  <BlockMath math="q = C_p \\times m \\times \\Delta T" />
-                  <BlockMath math="q = 0.06857 \\times 35g \\times 30 \, K" />
+                  <BlockMath math="q = C_p \times m \times \Delta T" />
+                  <BlockMath math="q = 0.06857 \times 35g \times 30 \, K" />
                   <BlockMath math="q = 72 \, J" />
                 </div>
               </div>
@@ -713,7 +713,7 @@ export default function Ch4_Thermochemistry_Final() {
           </div>
 
           <div className="my-12 p-8 bg-black/40 rounded-3xl border border-white/10 text-center">
-            <BlockMath math="\\Delta H = H_{products} - H_{reactants}" />
+            <BlockMath math="\Delta H = H_{products} - H_{reactants}" />
             <div className="flex justify-center gap-10 mt-6 text-gray-400">
               <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-orange-500" /> <InlineMath math="H_{products}" /> نواتج</div>
               <div className="flex items-center gap-2"><div className="w-3 h-3 rounded-full bg-cyan-500" /> <InlineMath math="H_{reactants}" /> متفاعلات</div>
@@ -798,7 +798,7 @@ export default function Ch4_Thermochemistry_Final() {
               </div>
 
               <div className="p-6 bg-orange-500/5 rounded-2xl border border-orange-500/20">
-                <p className="text-gray-300 mb-4">4/ جد ΔH للتفاعل التالي: <InlineMath math="1\text{H}_2\text{O}\text{(g)} \\rightarrow 1\text{H}_2\text{(g)} + 1/2 \, \text{O}_2\text{(g)}" /> (أو لمول واحد من H2)؟</p>
+                <p className="text-gray-300 mb-4">4/ جد ΔH للتفاعل التالي: <InlineMath math="1\text{H}_2\text{O}\text{(g)} \rightarrow 1\text{H}_2\text{(g)} + 1/2 \, \text{O}_2\text{(g)}" /> (أو لمول واحد من H2)؟</p>
                 <div className="flex items-center justify-between">
                   <TeacherNote page="11">عند قسمة المعادلة على أي رقم معين فان قيمة ΔH تقسم على نفس الرقم.</TeacherNote>
                   <span className="text-cyan-400 font-black text-2xl">+241.8 KJ</span>
@@ -885,7 +885,7 @@ export default function Ch4_Thermochemistry_Final() {
           <div className="my-10 p-8 bg-black/40 rounded-3xl border border-white/10">
             <h6 className="text-white font-bold mb-4">مثال على احتراق البروبان:</h6>
             <div className="text-2xl font-mono text-center" dir="ltr">
-              <InlineMath math="\text{C}_3\text{H}_8\text{(g)} + 5\text{O}_2\text{(g)} \\rightarrow 3\text{CO}_2\text{(g)} + 4\text{H}_2\text{O}\text{(l)} + 2219.2 \, \text{KJ}" />
+              <InlineMath math="\text{C}_3\text{H}_8\text{(g)} + 5\text{O}_2\text{(g)} \rightarrow 3\text{CO}_2\text{(g)} + 4\text{H}_2\text{O}\text{(l)} + 2219.2 \, \text{KJ}" />
               <div className="mt-4 text-orange-400 font-black">
                 <InlineMath math="\Delta H_c^{\circ} = -2219.2 \, \text{KJ/mol}" />
               </div>
@@ -895,7 +895,7 @@ export default function Ch4_Thermochemistry_Final() {
           <div className="p-10 bg-orange-500/5 rounded-3xl border border-orange-500/20 text-center">
             <h5 className="text-2xl font-black text-orange-400 mb-8">قانون حساب التغير في المحتوى الحراري للتفاعل:</h5>
             <FormulaBox label="القانون العام">
-              {"\\Delta H^{\\circ} = \\sum n \\Delta H_f^{\\circ} (\text{products}) - \\sum n \\Delta H_f^{\\circ} (\text{reactants})"}
+              {"\\Delta H^{\\circ} = \\sum n \\Delta H_f^{\\circ} (\\text{products}) - \\sum n \\Delta H_f^{\\circ} (\\text{reactants})"}
             </FormulaBox>
           </div>
         </GlassCard>
@@ -914,9 +914,9 @@ export default function Ch4_Thermochemistry_Final() {
                   <span>ΔHf°(CO2) = -393.5</span>
                   <span>ΔHf°(H2O) = -285.8</span>
                 </div>
-                <BlockMath math="\\Delta H^{\\circ} = [(-393.5) + 2(-285.8)] - [(-74.9) + 2(0)]" />
-                <BlockMath math="\\Delta H^{\\circ} = [-393.5 - 571.6] + 74.9" />
-                <BlockMath math="\\Delta H^{\\circ} = -890.2 \, KJ" />
+                <BlockMath math="\Delta H^{\circ} = [(-393.5) + 2(-285.8)] - [(-74.9) + 2(0)]" />
+                <BlockMath math="\Delta H^{\circ} = [-393.5 - 571.6] + 74.9" />
+                <BlockMath math="\Delta H^{\circ} = -890.2 \, KJ" />
               </div>
             }
           />
@@ -931,9 +931,9 @@ export default function Ch4_Thermochemistry_Final() {
                   <span>ΔHf°(H2O) = -285.8</span>
                   <span>ΔHf°(SO2) = -296.8</span>
                 </div>
-                <BlockMath math="\\Delta H^{\\circ} = [2(-285.8) + 2(-296.8)] - [2(-20.6) + 3(0)]" />
-                <BlockMath math="\\Delta H^{\\circ} = [-571.6 - 593.6] + 41.2" />
-                <BlockMath math="\\Delta H^{\\circ} = -1124 \, KJ" />
+                <BlockMath math="\Delta H^{\circ} = [2(-285.8) + 2(-296.8)] - [2(-20.6) + 3(0)]" />
+                <BlockMath math="\Delta H^{\circ} = [-571.6 - 593.6] + 41.2" />
+                <BlockMath math="\Delta H^{\circ} = -1124 \, KJ" />
               </div>
             }
           />
@@ -998,10 +998,10 @@ export default function Ch4_Thermochemistry_Final() {
                   </ul>
                 </div>
                 <div className="p-6 bg-black/40 rounded-2xl border border-white/10 font-mono" dir="ltr">
-                  <BlockMath math="\\Delta H = (+1299.5) + 2(-393.5) + (-285.8)" />
-                  <BlockMath math="\\Delta H = 1299.5 - 787.0 - 285.8" />
+                  <BlockMath math="\Delta H = (+1299.5) + 2(-393.5) + (-285.8)" />
+                  <BlockMath math="\Delta H = 1299.5 - 787.0 - 285.8" />
                   <div className="text-center text-2xl text-orange-400 font-black mt-4">
-                    <InlineMath math="\\Delta H = +226.7 \, KJ" />
+                    <InlineMath math="\Delta H = +226.7 \, KJ" />
                   </div>
                 </div>
               </div>
@@ -1025,10 +1025,10 @@ export default function Ch4_Thermochemistry_Final() {
                 </div>
                 <div className="p-6 bg-black/40 rounded-2xl border border-white/10 font-mono" dir="ltr">
                   <p className="text-cyan-400 mb-4" dir="rtl">الحل:</p>
-                  <BlockMath math="\\Delta H = (-393.5) + 2(-285.8) + (+890.3)" />
-                  <BlockMath math="\\Delta H = -393.5 - 571.6 + 890.3" />
+                  <BlockMath math="\Delta H = (-393.5) + 2(-285.8) + (+890.3)" />
+                  <BlockMath math="\Delta H = -393.5 - 571.6 + 890.3" />
                   <div className="text-center text-2xl text-orange-400 font-black mt-4">
-                    <InlineMath math="\\Delta H = -74.8 \, KJ" />
+                    <InlineMath math="\Delta H = -74.8 \, KJ" />
                   </div>
                 </div>
               </div>
@@ -1052,10 +1052,10 @@ export default function Ch4_Thermochemistry_Final() {
                 </div>
                 <div className="p-6 bg-black/40 rounded-2xl border border-white/10 font-mono" dir="ltr">
                   <p className="text-cyan-400 mb-4" dir="rtl">الحل:</p>
-                  <BlockMath math="\\Delta H = 2(-393.5) + 3(-285.8) + (3119.6 / 2)" />
-                  <BlockMath math="\\Delta H = -787.0 - 857.4 + 1559.8" />
+                  <BlockMath math="\Delta H = 2(-393.5) + 3(-285.8) + (3119.6 / 2)" />
+                  <BlockMath math="\Delta H = -787.0 - 857.4 + 1559.8" />
                   <div className="text-center text-2xl text-orange-400 font-black mt-4">
-                    <InlineMath math="\\Delta H = -84.6 \, KJ" />
+                    <InlineMath math="\Delta H = -84.6 \, KJ" />
                   </div>
                 </div>
               </div>
@@ -1242,9 +1242,9 @@ export default function Ch4_Thermochemistry_Final() {
             question="مثال 1: لتفاعل معين عند 298K، كانت ΔH = -176 KJ و ΔS = -0.285 KJ/K. هل التفاعل تلقائي؟"
             solution={
               <div className="space-y-6 text-xl" dir="ltr">
-                <BlockMath math="\\Delta G = \\Delta H - T \\Delta S" />
-                <BlockMath math="\\Delta G = -176 - (298 \\times -0.285)" />
-                <BlockMath math="\\Delta G = -176 + 84.93 = -91.07 \, KJ" />
+                <BlockMath math="\Delta G = \Delta H - T \Delta S" />
+                <BlockMath math="\Delta G = -176 - (298 \times -0.285)" />
+                <BlockMath math="\Delta G = -176 + 84.93 = -91.07 \, KJ" />
                 <div className="p-4 bg-green-500/20 rounded-xl text-center text-green-400 font-bold" dir="rtl">
                   بما أن ΔG سالبة، فالتفاعل تلقائي.
                 </div>
@@ -1257,9 +1257,9 @@ export default function Ch4_Thermochemistry_Final() {
             question="مثال 2: لتفاعل معين عند 298K، كانت ΔH = +145 KJ و ΔS = +0.160 KJ/K. هل التفاعل تلقائي؟"
             solution={
               <div className="space-y-6 text-xl" dir="ltr">
-                <BlockMath math="\\Delta G = \\Delta H - T \\Delta S" />
-                <BlockMath math="\\Delta G = +145 - (298 \\times 0.160)" />
-                <BlockMath math="\\Delta G = +145 - 47.68 = +97.32 \, KJ" />
+                <BlockMath math="\Delta G = \Delta H - T \Delta S" />
+                <BlockMath math="\Delta G = +145 - (298 \times 0.160)" />
+                <BlockMath math="\Delta G = +145 - 47.68 = +97.32 \, KJ" />
                 <div className="p-4 bg-red-500/20 rounded-xl text-center text-red-400 font-bold" dir="rtl">
                   بما أن ΔG موجبة، فالتفاعل غير تلقائي.
                 </div>
@@ -1345,7 +1345,7 @@ export default function Ch4_Thermochemistry_Final() {
             </Definition>
             
             <div className="my-8 p-8 bg-black/40 rounded-3xl border border-white/10 text-center">
-              <BlockMath math="C = m \\times C_p" />
+              <BlockMath math="C = m \times C_p" />
               <p className="mt-4 text-gray-400">حيث m هي الكتلة و Cp هي الحرارة النوعية.</p>
             </div>
 
@@ -1379,8 +1379,8 @@ export default function Ch4_Thermochemistry_Final() {
             question="1- احسب السعة الحرارية لـ 50g من الماء علماً أن Cp = 4.18 J/g.°C."
             solution={
               <div className="text-2xl font-mono text-center" dir="ltr">
-                <BlockMath math="C = m \\times C_p" />
-                <BlockMath math="C = 50g \\times 4.18 \, J/g.^{\circ}C" />
+                <BlockMath math="C = m \times C_p" />
+                <BlockMath math="C = 50g \times 4.18 \, J/g.^{\circ}C" />
                 <BlockMath math="C = 209 \, J/^{\circ}C" />
               </div>
             }
@@ -1391,7 +1391,7 @@ export default function Ch4_Thermochemistry_Final() {
             question="2- احسب السعة الحرارية لـ 100g من الحديد علماً أن Cp = 0.449 J/g.°C."
             solution={
               <div className="text-2xl font-mono text-center" dir="ltr">
-                <BlockMath math="C = 100g \\times 0.449 \, J/g.^{\circ}C" />
+                <BlockMath math="C = 100g \times 0.449 \, J/g.^{\circ}C" />
                 <BlockMath math="C = 44.9 \, J/^{\circ}C" />
               </div>
             }
