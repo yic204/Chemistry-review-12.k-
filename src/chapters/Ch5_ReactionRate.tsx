@@ -121,14 +121,14 @@ export default function Ch5_ReactionRate() {
             <Definition title="التفاعل المتجانس">
               التفاعل الذي تكون متفاعلاته ونواتجه في حالة فيزيائية واحدة (صلبة أو سائلة أو غازية).
               <div className="mt-4" dir="ltr">
-                <BlockMath math="H_{2(g)} + F_{2(g)} \\rightarrow 2HF_{(g)}" />
+                <BlockMath math="H_{2(g)} + F_{2(g)} \rightarrow 2HF_{(g)}" />
               </div>
             </Definition>
 
             <Definition title="التفاعل الغير المتجانس">
               التفاعل الذي تكون متفاعلاته ونواتجه في حالة فيزيائية مختلفة.
               <div className="mt-4" dir="ltr">
-                <BlockMath math="SO_{2(g)} + H_2O_{(l)} \\rightarrow H_2SO_{3(aq)}" />
+                <BlockMath math="SO_{2(g)} + H_2O_{(l)} \rightarrow H_2SO_{3(aq)}" />
               </div>
             </Definition>
           </div>
@@ -367,19 +367,19 @@ export default function Ch5_ReactionRate() {
             solution={
               <div className="space-y-6 text-xl">
                 <p>1/ احسب قيمة ΔH أمامي:</p>
-                <BlockMath math="\\Delta H = \\text{طاقة النواتج} - \\text{طاقة المتفاعلات}" />
-                <BlockMath math="\\Delta H = 40 - 0 = +40 \, kJ/mol" />
+                <BlockMath math="\Delta H = \text{طاقة النواتج} - \text{طاقة المتفاعلات}" />
+                <BlockMath math="\Delta H = 40 - 0 = +40 \, kJ/mol" />
                 <p className="text-cyan-400 font-bold">بما أن الإشارة موجبة، فالتفاعل ماص للحرارة.</p>
                 
                 <p>2/ احسب قيمة ΔH عكسي:</p>
                 <BlockMath math="0 - 40 = -40 \, kJ/mol" />
 
                 <p>3/ احسب قيمة E'a:</p>
-                <BlockMath math="E'_a = \\text{طاقة المعقد المنشط} - \\text{طاقة النواتج}" />
+                <BlockMath math="E'_a = \text{طاقة المعقد المنشط} - \text{طاقة النواتج}" />
                 <BlockMath math="E'_a = 60 - 40 = 20 \, kJ/mol" />
 
                 <p>4/ احسب قيمة Ea:</p>
-                <BlockMath math="E_a = \\text{طاقة المعقد المنشط} - \\text{طاقة المتفاعلات}" />
+                <BlockMath math="E_a = \text{طاقة المعقد المنشط} - \text{طاقة المتفاعلات}" />
                 <BlockMath math="E_a = 60 - 0 = 60 \, kJ/mol" />
               </div>
             }
@@ -436,8 +436,8 @@ export default function Ch5_ReactionRate() {
               <div className="space-y-4 text-xl">
                 <p>أ- النواتج (لأن Ea {'>'} E'a في التفاعل الماص).</p>
                 <p>ب- ΔH أمامي = الفرق بين Ea و E'a</p>
-                <BlockMath math="\\Delta H = E_a - E'_a" />
-                <BlockMath math="\\Delta H = 85 - 80 = 5 \, kJ" />
+                <BlockMath math="\Delta H = E_a - E'_a" />
+                <BlockMath math="\Delta H = 85 - 80 = 5 \, kJ" />
               </div>
             }
           />
@@ -531,8 +531,8 @@ export default function Ch5_ReactionRate() {
             question="س1/ في التفاعل التالي H₂ + Cl₂ → 2HCl يتغير تركيز الهيدروجين من 6M إلى 2M خلال 2 دقيقة. ما معدل سرعة التفاعل بـ M/s؟"
             solution={
               <div className="space-y-6 text-2xl font-mono text-center" dir="ltr">
-                <BlockMath math="R = \\frac{\\pm \\Delta [ ]}{\\Delta t}" />
-                <BlockMath math="R = \\frac{6 - 2}{120 \, s}" />
+                <BlockMath math="R = \frac{\pm \Delta [ ]}{\Delta t}" />
+                <BlockMath math="R = \frac{6 - 2}{120 \, s}" />
                 <BlockMath math="R = 0.033 \, M.s^{-1}" />
               </div>
             }
@@ -544,10 +544,10 @@ export default function Ch5_ReactionRate() {
             solution={
               <div className="space-y-6 text-2xl font-mono text-center" dir="ltr">
                 <p className="text-right text-gray-400 font-sans" dir="rtl">أولاً نجد عدد المولات:</p>
-                <BlockMath math="n = \\frac{3}{95.5} = 0.03 \, mol" />
+                <BlockMath math="n = \frac{3}{95.5} = 0.03 \, mol" />
                 <p className="text-right text-gray-400 font-sans" dir="rtl">ثانياً نطبق القانون:</p>
-                <BlockMath math="R = \\frac{\\pm \\Delta \\text{mol}}{\\Delta t}" />
-                <BlockMath math="R = \\frac{0.03 - 0}{70 \, s}" />
+                <BlockMath math="R = \frac{\pm \Delta \text{mol}}{\Delta t}" />
+                <BlockMath math="R = \frac{0.03 - 0}{70 \, s}" />
                 <BlockMath math="R = 0.000428 \, mol.s^{-1}" />
               </div>
             }
@@ -563,9 +563,9 @@ export default function Ch5_ReactionRate() {
             question="س3/ وضعت قطعة من فلز الصوديوم كتلتها 5g في 100g من الماء، وبعد مضي 15s تجمع 14.8 ml من غاز الهيدروجين. حسب المعادلة التالية ما معدل سرعة التفاعل بـ ml/s؟"
             solution={
               <div className="space-y-6 text-2xl font-mono text-center" dir="ltr">
-                <BlockMath math="2Na + H_2O \\rightarrow 2NaOH + H_2" />
-                <BlockMath math="R = \\frac{\\pm \\Delta V}{\\Delta t}" />
-                <BlockMath math="R = \\frac{14.8}{15}" />
+                <BlockMath math="2Na + H_2O \rightarrow 2NaOH + H_2" />
+                <BlockMath math="R = \frac{\pm \Delta V}{\Delta t}" />
+                <BlockMath math="R = \frac{14.8}{15}" />
                 <BlockMath math="R = 0.98 \, ml/s" />
               </div>
             }
@@ -577,11 +577,11 @@ export default function Ch5_ReactionRate() {
             solution={
               <div className="space-y-6 text-2xl font-mono text-center" dir="ltr">
                 <p className="text-right text-gray-400 font-sans" dir="rtl">أولاً نجد عدد المولات:</p>
-                <BlockMath math="n = \\frac{0.13}{65.39} = 0.00198 \, mol" />
+                <BlockMath math="n = \frac{0.13}{65.39} = 0.00198 \, mol" />
                 <p className="text-right text-gray-400 font-sans" dir="rtl">ثانياً نطبق القانون:</p>
-                <BlockMath math="R = \\frac{\\pm \\Delta \\text{mol}}{\\Delta t}" />
-                <BlockMath math="R = \\frac{0.00198}{20}" />
-                <BlockMath math="R = 9.94 \\times 10^{-5} \, mol/s" />
+                <BlockMath math="R = \frac{\pm \Delta \text{mol}}{\Delta t}" />
+                <BlockMath math="R = \frac{0.00198}{20}" />
+                <BlockMath math="R = 9.94 \times 10^{-5} \, mol/s" />
               </div>
             }
           />
@@ -945,7 +945,7 @@ export default function Ch5_ReactionRate() {
             solution={
               <div className="space-y-6 text-2xl font-mono text-center" dir="ltr">
                 <BlockMath math="R = k [A]^1" />
-                <BlockMath math="R = 0.5 \\times 0.2" />
+                <BlockMath math="R = 0.5 \times 0.2" />
                 <BlockMath math="R = 0.1 \, M/s" />
               </div>
             }
@@ -1016,8 +1016,8 @@ export default function Ch5_ReactionRate() {
                   </div>
                   <p className="text-right" dir="rtl">3- لحساب k نعوض بيانات التجربة (1):</p>
                   <div className="font-mono text-center" dir="ltr">
-                    <BlockMath math="2.0 \\times 10^{-3} = k (0.1)^1 (0.1)^2" />
-                    <BlockMath math="k = \\frac{2.0 \\times 10^{-3}}{10^{-3}} = 2.0 \, M^{-2}.s^{-1}" />
+                    <BlockMath math="2.0 \times 10^{-3} = k (0.1)^1 (0.1)^2" />
+                    <BlockMath math="k = \frac{2.0 \times 10^{-3}}{10^{-3}} = 2.0 \, M^{-2}.s^{-1}" />
                   </div>
                 </div>
               </div>
