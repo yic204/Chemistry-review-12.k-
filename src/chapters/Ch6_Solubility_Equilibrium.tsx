@@ -780,8 +780,8 @@ export default function Ch6_Solubility_Equilibrium() {
                 هو الثابت الاتزان التفاعل تأين القاعدة الضعيفة ويكون ثابتا عند درجة حرارة معينة لكنه يكتسب قيمة جديدة عند كل درجة حرارة جديدة . ويمثل ثابت تأين القاعدة الضعيفة قيمة صغيرة .
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div className="p-6 bg-black/40 rounded-2xl border border-white/10" dir="ltr">
-                  <p className="text-purple-500 font-bold mb-4 text-center">Ammonia Ionization</p>
+                <div className="p-4 md:p-6 bg-black/40 rounded-2xl border border-white/10 text-xs sm:text-sm md:text-base overflow-x-auto" dir="ltr">
+                  <p className="text-purple-500 font-bold mb-4 text-center text-sm md:text-base">Ammonia Ionization</p>
                   <BlockMath math="\text{NH}_3\text{(aq)} + \text{H}_2\text{O}\text{(l)} \rightleftharpoons \text{NH}_4^+\text{(aq)} + \text{OH}^-\text{(aq)}" />
                   <div className="mt-6 pt-6 border-t border-white/10">
                     <BlockMath math="\text{K}_b = \frac{[\text{NH}_4^+][\text{OH}^-]}{[\text{NH}_3]}" />
