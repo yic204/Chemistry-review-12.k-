@@ -554,20 +554,20 @@ export default function Ch3_Titration_pH_Final() {
             />
           </div>
         </GlassCard>
-      </section>
+      </section>            
 
       {/* الصفحة 6 */}
       <section id="page-6">
         <GlassCard page="6" title="القوانين الذهبية">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
-              { id: 1, formula: "[\text{OH}^-][\text{H}_3\text{O}^+] = 1 \times 10^{-14}" },
-              { id: 2, formula: "\text{pH} + \text{pOH} = 14" },
-              { id: 3, formula: "\text{pH} = -\log[\text{H}_3\text{O}^+]" },
-              { id: 4, formula: "\text{pOH} = -\log[\text{OH}^-]" },
-              { id: 5, formula: "[\text{H}_3\text{O}^+] = 10^{-\text{pH}}" },
-              { id: 6, formula: "[\text{OH}^-] = 10^{-\text{pOH}}" }
-            ].map(law => (
+          { id: 1, formula: "[\\text{OH}^-][\\text{H}_3\\text{O}^+] = 1 \\times 10^{-14}" },
+          { id: 2, formula: "\\text{pH} + \\text{pOH} = 14" },
+          { id: 3, formula: "\\text{pH} = -\\log[\\text{H}_3\\text{O}^+]" },
+          { id: 4, formula: "\\text{pOH} = -\\log[\\text{OH}^-]" },
+          { id: 5, formula: "[\\text{H}_3\\text{O}^+] = 10^{-\\text{pH}}" },
+          { id: 6, formula: "[\\text{OH}^-] = 10^{-\\text{pOH}}" }
+        ].map(law => (
               <div key={law.id} className="p-6 bg-black/40 rounded-2xl border border-white/10 flex items-center justify-between group hover:border-cyan-500 transition-all">
                 <span className="w-10 h-10 rounded-full bg-cyan-500/20 flex items-center justify-center text-cyan-400 font-black">{law.id}</span>
                 <div className="text-2xl font-mono text-cyan-300" dir="ltr">
