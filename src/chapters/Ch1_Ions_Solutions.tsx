@@ -669,14 +669,14 @@ export default function Ch1_Ions_Solutions() {
       <div>
         <h6 className="text-cyan-400 font-bold mb-2">1/ المعادلة بالصيغ (تفاعل استبدال الثنائي):</h6>
         <div className="text-sm md:text-base overflow-x-auto pb-2" dir="ltr">
-          <BlockMath math="2\text{NH}_4^+{}_{(aq)} + \text{S}^{2-}_{(aq)} + \text{Cd}^{2+}_{(aq)} + 2\text{NO}_3^-{}_{(aq)} \rightarrow \text{CdS}_{(s)} + 2\text{NH}_4^+{}_{(aq)} + 2\text{NO}_3^-{}_{(aq)}" />
+         <BlockMath math="(\text{NH}_4)_2\text{S}_{(aq)} + \text{Cd}(\text{NO}_3)_{2(aq)} \rightarrow \text{CdS}_{(s)} + 2\text{NH}_4\text{NO}_{3(aq)}" />
         </div>
       </div>
       
       <div>
         <h6 className="text-cyan-400 font-bold mb-2">2/ المعادلة الايونية العامة:</h6>
         <div className="text-sm md:text-base overflow-x-auto pb-2" dir="ltr">
-          <BlockMath math="2\text{NH}_4^+_{(aq)} + \text{S}^{2-}_{(aq)} + \text{Cd}^{2+}_{(aq)} + 2\text{NO}_3^-_{(aq)} \rightarrow \text{CdS}_{(s)} + 2\text{NH}_4^+_{(aq)} + 2\text{NO}_3^-_{(aq)}" />
+          <BlockMath math="2\text{NH}_4^+{}_{(aq)} + \text{S}^{2-}_{(aq)} + \text{Cd}^{2+}_{(aq)} + 2\text{NO}_3^-{}_{(aq)} \rightarrow \text{CdS}_{(s)} + 2\text{NH}_4^+{}_{(aq)} + 2\text{NO}_3^-{}_{(aq)}" />
         </div>
       </div>
       
