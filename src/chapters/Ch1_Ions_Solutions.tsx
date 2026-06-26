@@ -679,7 +679,7 @@ export default function Ch1_Ions_Solutions() {
                   <BlockMath math={`Cd^{2+}_{(aq)} + S^{2-}_{(aq)} \\rightarrow CdS_{(s)}`} />
                 </div>
             }
-          />
+             />
         </GlassCard>
       </section>
 
