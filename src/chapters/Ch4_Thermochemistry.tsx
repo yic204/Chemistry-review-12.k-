@@ -766,9 +766,11 @@ export default function Ch4_Thermochemistry_Final() {
         </GlassCard>
       </section>
 
-      {/* الصفحة 11 */}
+{/* الصفحة 11 */}
 <section id="page-11">
   <GlassCard page="11" title="تطبيقات على معادلة التفاعل">
+    
+    {/* الجزء الأول: المعادلات */}
     <div className="p-8 bg-white/5 rounded-3xl border border-white/10 mb-10">
       <h5 className="text-xl font-bold text-white mb-6">س/ لديك التفاعل التالي:</h5>
       <div className="text-3xl font-mono text-cyan-300 text-center mb-8" dir="ltr">
@@ -821,33 +823,30 @@ export default function Ch4_Thermochemistry_Final() {
           </div>
         </div>
       </div>
+
+      {/* 5/ SolvedExample */}
+      <SolvedExample 
+        page="11"
+        question="5/ جد التغير في المحتوى الحراري لنصف مول من H2؟"
+        solution={
+          <div className="flex justify-center items-center gap-10" dir="ltr">
+            <div className="text-center">
+              <div className="text-sm text-gray-500 mb-2">mol</div>
+              <div className="text-xl font-bold">2</div>
+              <div className="text-xl font-bold text-orange-400">0.5</div>
+            </div>
+            <ArrowRightLeft className="w-8 h-8 text-orange-500" />
+            <div className="text-center">
+              <div className="text-sm text-gray-500 mb-2">ΔH°</div>
+              <div className="text-xl font-bold">483.6 KJ</div>
+              <div className="text-xl font-bold text-orange-400">X = 120.9 KJ</div>
+            </div>
+          </div>
+        }
+      />
     </div>
   </GlassCard>
 </section>
-
-              <SolvedExample 
-                page="11"
-                question="5/ جد التغير في المحتوى الحراري لنصف مول من H2؟"
-                solution={
-                  <div className="flex justify-center items-center gap-10" dir="ltr">
-                    <div className="text-center">
-                      <div className="text-sm text-gray-500 mb-2">mol</div>
-                      <div className="text-xl font-bold">2</div>
-                      <div className="text-xl font-bold">0.5</div>
-                    </div>
-                    <ArrowRightLeft className="w-8 h-8 text-orange-500" />
-                    <div className="text-center">
-                      <div className="text-sm text-gray-500 mb-2">ΔH°</div>
-                      <div className="text-xl font-bold">483.6 KJ</div>
-                      <div className="text-xl font-bold text-orange-400">X = 120.9 KJ</div>
-                    </div>
-                  </div>
-                }
-              />
-            </div>
-          </div>
-        </GlassCard>
-      </section>
 
       {/* الصفحة 12 */}
       <section id="page-12">
