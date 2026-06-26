@@ -678,7 +678,6 @@ export default function Ch1_Ions_Solutions() {
                   <h6 className="text-cyan-400 font-bold mb-2">3/ المعادلة الايونية الصرفة:</h6>
                   <BlockMath math={`Cd^{2+}_{(aq)} + S^{2-}_{(aq)} \\rightarrow CdS_{(s)}`} />
                 </div>
-              </div>
             }
           />
         </GlassCard>
