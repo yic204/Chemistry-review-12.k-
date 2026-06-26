@@ -225,9 +225,9 @@ export default function Ch3_Titration_pH_Final() {
                 <BlockMath math="\text w_{K} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
                 <BlockMath math="\text w_{K} = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
                 <BlockMath math="\text w_{K} = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
-              </div>
-            </div>
-          </div>
+                </div>
+             </div>
+           </div>
 
           <TeacherNote page="2">
             قيمة ثابت تأين الماء دائما ثابتة عند درجة حرارة <InlineMath math="25 \, ^{\circ}\text{C}" /> ولكن تتغير عن درجات العالية والمنخفضة.
