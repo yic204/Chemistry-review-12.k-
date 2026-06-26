@@ -672,7 +672,7 @@ export default function Ch1_Ions_Solutions() {
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">2/ المعادلة الايونية العامة:</h6>
-                  <BlockMath math={String.raw`2NH_4^{+}_{(aq)} + S^{2-}_{(aq)} + Cd^{2+}_{(aq)} + 2NO_3^{-}_{(aq)} \rightarrow CdS_{(s)} + 2NH_4^{+}_{(aq)} + 2NO_3^{-}_{(aq)}`} />
+                  <BlockMath math="2NH_4^+_{(aq)} + S^{2-}_{(aq)} + Cd^{2+}_{(aq)} + 2NO_3^-_{(aq)} \rightarrow CdS_{(s)} + 2NH_4^+_{(aq)} + 2NO_3^-_{(aq)}" />
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">3/ المعادلة الايونية الصرفة:</h6>
@@ -683,7 +683,7 @@ export default function Ch1_Ions_Solutions() {
           />
         </GlassCard>
       </section>
-      
+
       {/* التأين */}
       <section id="ionization">
         <SectionHeader title="التأين (Ionization)" icon={Zap} />
