@@ -695,9 +695,6 @@ export default function Ch1_Ions_Solutions() {
     </div>
   }
 />
-        </GlassCard>
-      </section>
-
       {/* التأين */}
       <section id="ionization">
         <SectionHeader title="التأين (Ionization)" icon={Zap} />
