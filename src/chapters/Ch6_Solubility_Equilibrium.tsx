@@ -268,9 +268,9 @@ export default function Ch6_Solubility_Equilibrium() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
             <div className="p-6 bg-black/40 rounded-2xl border border-white/10" dir="ltr">
               <p className="text-cyan-500 font-bold mb-4 text-center">General Equation</p>
-              <BlockMath math="n\\text{A} + m\\text{B} \\rightleftharpoons x\\text{C} + y\\text{D}" />
+              <BlockMath math="n\text{A} + m\text{B} \rightleftharpoons x\text{C} + y\text{D}" />
               <div className="mt-6 pt-6 border-t border-white/10">
-                <BlockMath math="\\text{K} = \\frac{[\\text{C}]^x [\\text{D}]^y}{[\\text{A}]^n [\\text{B}]^m}" />
+                <BlockMath math="\text{K} = \frac{[\text{C}]^x [\text{D}]^y}{[\text{A}]^n [\text{B}]^m}" />
               </div>
             </div>
             <div className="space-y-4">
@@ -618,8 +618,8 @@ export default function Ch6_Solubility_Equilibrium() {
                 <div className="space-y-2 text-lg text-gray-400">
                   <p>1/ اتجاه المرجح تكون عكسي</p>
                   <p>2/ تقل التأين الحمض الضعيف</p>
-                  <p>3/ يزداد <InlineMath math="[\\text{CH}_3\\text{COOH}]" /> أو يزداد تركيز الحمض الغير المتأين .</p>
-                  <p>4/ تقل <InlineMath math="[\\text{H}_3\\text{O}^+]" /></p>
+                  <p>3/ يزداد <InlineMath math="[\text{CH}_3\text{COOH}]" /> أو يزداد تركيز الحمض الغير المتأين .</p>
+                  <p>4/ تقل <InlineMath math="[\text{H}_3\text{O}^+]" /></p>
                   <p>5/ تزداد pH</p>
                   <p>6/ تقل pOH</p>
                 </div>
@@ -630,9 +630,9 @@ export default function Ch6_Solubility_Equilibrium() {
                 <div className="space-y-2 text-lg text-gray-400">
                   <p>1/ اتجاه المرجح تكون عكسي</p>
                   <p>2/ تقل التأين القاعدة الضعيفة</p>
-                  <p>3/ يزداد <InlineMath math="[\\text{NH}_4^+]" /></p>
-                  <p>4/ تزداد <InlineMath math="[\\text{NH}_3]" /> أو يزداد تركيز القاعدة الغير المتأين .</p>
-                  <p>5/ تقل <InlineMath math="[\\text{OH}^-]" /></p>
+                  <p>3/ يزداد <InlineMath math="[\text{NH}_4^+]" /></p>
+                  <p>4/ تزداد <InlineMath math="[\text{NH}_3]" /> أو يزداد تركيز القاعدة الغير المتأين .</p>
+                  <p>5/ تقل <InlineMath math="[\text{OH}^-]" /></p>
                   <p>6/ تقل pH</p>
                   <p>7/ تزداد pOH</p>
                 </div>
