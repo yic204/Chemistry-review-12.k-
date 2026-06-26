@@ -215,7 +215,7 @@ export default function Ch3_Titration_pH_Final() {
             </div>
 
             <div className="p-8 bg-cyan-500/5 rounded-3xl border border-cyan-500/20 shadow-xl">
-              <h5 className="text-cyan-400 font-black mb-6 flex items-center gap-2">
+              <h5 className="text-cyan-400 font-black mb-5 flex items-center gap-2">
                 <Calculator className="w-6 h-6" /> ثابت تأين الذاتي للماء
               </h5>
               <p className="text-gray-200 text-xl leading-relaxed mb-6">
