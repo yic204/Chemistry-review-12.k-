@@ -220,7 +220,7 @@ export default function Ch4_Thermochemistry_Final() {
               <ul className="space-y-4 text-gray-300 font-medium text-lg">
                 <li className="flex items-start gap-2">• التعريف: هو قياس معدل الطاقة الحركية لجسيمات عينة من المادة.</li>
                 <li className="flex items-start gap-2">• العلاقة بين T ومعدل الطاقة الحركية طردية.</li>
-                <li className="flex items-start gap-2">• تقاس مباشرة بالقانون: <InlineMath math="\text{K} = {^\circ\text{C}} + 273" />.</li>
+                <li className="flex items-start gap-2">• وحدته: <InlineMath math={`^{\\circ}C`} /> أو <InlineMath math={`K`} />.</li>
                 <li className="flex items-start gap-2">• تقاس مباشرة.</li>
               </ul>
             </div>
