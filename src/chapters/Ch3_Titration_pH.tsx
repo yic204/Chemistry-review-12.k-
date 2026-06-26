@@ -454,7 +454,7 @@ export default function Ch3_Titration_pH_Final() {
           <ul className="space-y-6 text-xl text-gray-200 font-medium list-decimal list-inside">
             <li>قيم للمحاليل المائي عند درجة حرارة <InlineMath math="25 \, ^\circ\text{C}" /> ان مدى <InlineMath math="\text{pH}" /> تتراوح بصورة عامة بين (0 - 14) وذلك لالان أكثر المحاليل المائية تركيز الانيون الهيدرونيوم له تقع مابين <InlineMath math="10^0" /> الى <InlineMath math="10^{-14}" />.</li>
             <li className="text-cyan-400 font-black">ان مجموعة قيمتي <InlineMath math="\text{pH}" /> و <InlineMath math="\text{pOH}" /> لمحلول متعادل عند درجة حرارة <InlineMath math="25 \, ^\circ\text{C}" /> يساوي 14.
-              <FormulaBox>{"\ text{pH} + \ text{pOH} = 14"}</FormulaBox>
+              <FormulaBox>{"\\text{pH} + \\text{pOH} = 14"}</FormulaBox>
             </li>
             <li>الرقم الهيدروجيني للماء المقطر أو المحلول المتعادل هو 7 لالان تركيز ايون الهيدرونيوم والهيدروكسيد يساوي <InlineMath math="10^{-7}" />.</li>
             <li>تركيز ايون الهيدرونيوم للمحلول الحامضي يكون أكبر من تركيز ايون الهيدروكسيد.</li>
