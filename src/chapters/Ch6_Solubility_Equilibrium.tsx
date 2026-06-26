@@ -758,7 +758,7 @@ export default function Ch6_Solubility_Equilibrium() {
                 هو ثابت الاتزان لتفاعل تأين الحامض الضعيف ويكون ثابتا عند درجة حرارة معينة لكنه يكتسب قيمة جديدة عند كل درجة حرارة جديدة وتمثل ثابت تأين الحامض الضعيف قيمة صغيرة .
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                <div className="p-6 bg-black/40 rounded-2xl border border-white/10" dir="ltr">
+               <div className="p-4 md:p-6 bg-black/40 rounded-2xl border border-white/10 text-xs sm:text-sm md:text-base overflow-x-auto" dir="ltr">
                   <p className="text-cyan-500 font-bold mb-4 text-center text-sm md:text-base">Acetic Acid Ionization</p>
                   <BlockMath math="\text{CH}_3\text{COOH}\text{(aq)} + \text{H}_2\text{O}\text{(l)} \rightleftharpoons \text{CH}_3\text{COO}^-\text{(aq)} + \text{H}_3\text{O}^+\text{(aq)}" />
                   <div className="mt-6 pt-6 border-t border-white/10">
