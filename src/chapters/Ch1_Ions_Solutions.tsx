@@ -672,7 +672,7 @@ export default function Ch1_Ions_Solutions() {
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">2/ المعادلة الايونية العامة:</h6>
-                  <BlockMath math="2NH_4^+_{(aq)} + S^{2-}_{(aq)} + Cd^{2+}_{(aq)} + 2NO_3^-_{(aq)} \rightarrow CdS_{(s)} + 2NH_4^+_{(aq)} + 2NO_3^-_{(aq)}" />
+                  <BlockMath math="2\text{NH}_4^+{}_{(\text{aq})} + \text{S}^{2-}{}_{(\text{aq})} + \text{Cd}^{2+}{}_{(\text{aq})} + 2\text{NO}_3^-{}_{(\text{aq})} \rightarrow \text{CdS}_{(\text{s})} + 2\text{NH}_4^+{}_{(\text{aq})} + 2\text{NO}_3^-{}_{(\text{aq})}" />
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">3/ المعادلة الايونية الصرفة:</h6>
