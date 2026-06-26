@@ -222,9 +222,9 @@ export default function Ch3_Titration_pH_Final() {
                 هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{K}_w" />.
               </p>
               <div className="space-y-4 bg-black/40 p-6 rounded-2xl border border-white/5 font-mono text-cyan-300 text-2xl text-center">
-                <BlockMath math="\text{K_w} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
-                <BlockMath math="\text{K_w} = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
-                <BlockMath math="\text{K_w} = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
+                <BlockMath math="\text{K}_w = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
+                <BlockMath math="\text{K}_w = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
+                <BlockMath math="\text{K}_w = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
               </div>
             </div>
           </div>
