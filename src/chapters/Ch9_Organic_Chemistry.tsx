@@ -370,7 +370,7 @@ export default function Ch9_Organic_Chemistry() {
                 هي الهيدروكربونات التي ترتبط فيها كل ذرة كربون في الجزيء بأربعة روابط تساهمية أحادية مع ذرات أخرى.
               </p>
               <FormulaBox label="الصيغة العامة للألكانات">
-                {"\text{C}_n\text{H}_{2n+2}"}
+                {"\\text{C}_n\\text{H}_{2n+2}"}
               </FormulaBox>
               <TeacherNote>
                 ملاحظة: الآصرة بين الهيدروجين والكربون تكون <span className="text-amber-400 font-bold">غير قطبية</span>. بزيادة عدد ذرات الكربون تقل نسبة الهيدروجين في المركب.
