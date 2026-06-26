@@ -767,43 +767,63 @@ export default function Ch4_Thermochemistry_Final() {
       </section>
 
       {/* الصفحة 11 */}
-      <section id="page-11">
-        <GlassCard page="11" title="تطبيقات على معادلة التفاعل">
-          <div className="p-8 bg-white/5 rounded-3xl border border-white/10 mb-10">
-            <h5 className="text-xl font-bold text-white mb-6">س/ لديك التفاعل التالي:</h5>
-            <div className="text-3xl font-mono text-cyan-300 text-center mb-8" dir="ltr">
-              <InlineMath math="2\text{H}_2\text{O}\text{(g)} + 483.6 \, \text{KJ} \rightarrow 2\text{H}_2\text{(g)} + \text{O}_2\text{(g)}" />
-            </div>
-            
-            <div className="space-y-6">
-              <div className="flex items-center justify-between p-4 bg-black/40 rounded-2xl border border-white/5">
-                <span className="text-gray-300">1/ جد ΔH</span>
-                <span className="text-green-400 font-black">+483.6 KJ</span>
-              </div>
+<section id="page-11">
+  <GlassCard page="11" title="تطبيقات على معادلة التفاعل">
+    <div className="p-8 bg-white/5 rounded-3xl border border-white/10 mb-10">
+      <h5 className="text-xl font-bold text-white mb-6">س/ لديك التفاعل التالي:</h5>
+      <div className="text-3xl font-mono text-cyan-300 text-center mb-8" dir="ltr">
+        <InlineMath math="2\text{H}_2\text{O}\text{{(g)}} + 483.6 \, \text{KJ} \rightarrow 2\text{H}_2\text{{(g)}} + \text{O}_2\text{{(g)}}" />
+      </div>
+    </div>
 
-              <div className="p-6 bg-orange-500/5 rounded-2xl border border-orange-500/20">
-                <p className="text-gray-300 mb-4">2/ جد ΔH للتفاعل العكسي: <InlineMath math="2\text{H}_2\text{(g)} + \text{O}_2\text{(g)} \rightarrow 2\text{H}_2\text{O}\text{(g)}" /></p>
-                <div className="flex items-center justify-between">
-                  <TeacherNote page="11">عند قلب المعادلة أو اذا طلب قيمة ΔH للتفاعل العكسي (فتقلب اشارة ΔH فقط).</TeacherNote>
-                  <span className="text-red-400 font-black text-2xl">-483.6 KJ</span>
-                </div>
-              </div>
+    <div className="space-y-6">
+      {/* 1/ */}
+      <div className="flex items-center justify-between p-4 bg-black/40 rounded-2xl border border-white/5">
+        <span className="text-gray-300">1/ جد \Delta H</span>
+        <span className="text-green-400 font-black">+483.6 KJ</span>
+      </div>
 
-              <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
-                <p className="text-gray-300 mb-4">3/ جد ΔH للتفاعل التالي: <InlineMath math="4\text{H}_2\text{O}\text{(g)} \rightarrow 4\text{H}_2\text{(g)} + 2\text{O}_2\text{(g)}" /> (أو لمولين من O2)؟</p>
-                <div className="flex items-center justify-between">
-                  <TeacherNote page="11">عند ضرب المعادلة في أي رقم معين تضرب قيمة ΔH في نفس الرقم.</TeacherNote>
-                  <span className="text-cyan-400 font-black text-2xl">+967.2 KJ</span>
-                </div>
-              </div>
+      {/* 2/ */}
+      <div className="p-6 bg-orange-500/5 rounded-2xl border border-orange-500/20">
+        <p className="text-gray-300 mb-4">2/ جد \Delta H للتفاعل العكسي: <InlineMath math="2\text{H}_2\text{O}\text{{(g)}} \rightarrow \text{O}_2\text{{(g)}} + 2\text{H}_2\text{{(g)}}" /></p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-4">
+          <div className="w-full md:flex-1">
+            <TeacherNote page="11">عند قلب المعادلة أو إذا طلب قيمة \Delta H للتفاعل العكسي (فتقلب إشارة \Delta H فقط).</TeacherNote>
+          </div>
+          <div className="w-full md:w-auto text-left" dir="ltr">
+            <span className="text-red-400 font-black text-2xl whitespace-nowrap">-483.6 KJ</span>
+          </div>
+        </div>
+      </div>
 
-              <div className="p-6 bg-orange-500/5 rounded-2xl border border-orange-500/20">
-                <p className="text-gray-300 mb-4">4/ جد ΔH للتفاعل التالي: <InlineMath math="1\text{H}_2\text{O}\text{(g)} \rightarrow 1\text{H}_2\text{(g)} + 1/2 \, \text{O}_2\text{(g)}" /> (أو لمول واحد من H2)؟</p>
-                <div className="flex items-center justify-between">
-                  <TeacherNote page="11">عند قسمة المعادلة على أي رقم معين فان قيمة ΔH تقسم على نفس الرقم.</TeacherNote>
-                  <span className="text-cyan-400 font-black text-2xl">+241.8 KJ</span>
-                </div>
-              </div>
+      {/* 3/ */}
+      <div className="p-6 bg-white/5 rounded-2xl border border-white/10">
+        <p className="text-gray-300 mb-4">3/ جد \Delta H للتفاعل التالي: <InlineMath math="4\text{H}_2\text{O}\text{{(g)}} \rightarrow 4\text{H}_2\text{{(g)}} + 2\text{O}_2\text{{(g)}}" /> (أو لمولين من O2)؟</p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-4">
+          <div className="w-full md:flex-1">
+            <TeacherNote page="11">عند ضرب المعادلة في أي رقم معين تضرب قيمة \Delta H في نفس الرقم.</TeacherNote>
+          </div>
+          <div className="w-full md:w-auto text-left" dir="ltr">
+            <span className="text-cyan-400 font-black text-2xl whitespace-nowrap">+967.2 KJ</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 4/ */}
+      <div className="p-6 bg-orange-500/5 rounded-2xl border border-orange-500/20">
+        <p className="text-gray-300 mb-4">4/ جد \Delta H للتفاعل التالي: <InlineMath math="1\text{H}_2\text{O}\text{{(g)}} \rightarrow 1\text{H}_2\text{{(g)}} + 1/2 \, \text{O}_2\text{{(g)}}" /> (أو لمول واحد من H2)؟</p>
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4 mt-4">
+          <div className="w-full md:flex-1">
+            <TeacherNote page="11">عند قسمة المعادلة على أي رقم معين فان قيمة \Delta H تقسم على نفس الرقم.</TeacherNote>
+          </div>
+          <div className="w-full md:w-auto text-left" dir="ltr">
+            <span className="text-cyan-400 font-black text-2xl whitespace-nowrap">+241.8 KJ</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </GlassCard>
+</section>
 
               <SolvedExample 
                 page="11"
