@@ -694,16 +694,16 @@ export default function Ch6_Solubility_Equilibrium() {
                 </div>
               }
               solution={
-                <div className="space-y-4">
+                <div className="space-y-3">
                   <p className="break-words whitespace-normal">1. نحسب التراكيز المولارية (M = mol/L):</p>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                    <div className="p-4 bg-black/20 rounded-xl border border-white/10" dir="ltr">
+                    <div className="p-3 bg-black/20 rounded-1xl border border-white/8" dir="ltr">
                       <BlockMath math="[\text{AB}_2\text{C}] = \frac{0.084}{5} = 0.0168 \, \text{M}" />
                     </div>
-                    <div className="p-4 bg-black/20 rounded-xl border border-white/10" dir="ltr">
+                    <div className="p-3 bg-black/20 rounded-1xl border border-white/8" dir="ltr">
                       <BlockMath math="[\text{B}_2] = \frac{0.035}{5} = 0.007 \, \text{M}" />
                     </div>
-                    <div className="p-4 bg-black/20 rounded-xl border border-white/10" dir="ltr">
+                    <div className="p-3 bg-black/20 rounded-1xl border border-white/8" dir="ltr">
                       <BlockMath math="[\text{AC}] = \frac{0.059}{5} = 0.0118 \, \text{M}" />
                     </div>
                   </div>
