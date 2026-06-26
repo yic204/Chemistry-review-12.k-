@@ -219,7 +219,7 @@ export default function Ch3_Titration_pH_Final() {
                 <Calculator className="w-6 h-6" /> ثابت تأين الذاتي للماء
               </h5>
               <p className="text-gray-200 text-xl leading-relaxed mb-6">
-                هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{K}_w" />.
+                هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{Kw}" />.
               </p>
               <div className="space-y-3 bg-black/40 p-6 rounded-2xl border border-white/5 font-mono text-cyan-300 text-1xl text-center">
                 <BlockMath math="\text {Kw} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
@@ -465,7 +465,7 @@ export default function Ch3_Titration_pH_Final() {
             <li>محلول به <InlineMath math="[\text{H}_3\text{O}^+] = 10^{-8}" /> يكون قاعدي في <InlineMath math="11 \times 10^{-14}" />.</li>
             <li>عند إضافة حمض إلى الماء يزداد <InlineMath math="[\text{H}_3\text{O}^+]" /> ويقل <InlineMath math="[\text{OH}^-]" />.</li>
             <li className="text-yellow-400 italic">و رغم ذلك فهو غير حمضي؟ <InlineMath math="2.3 \times 10^{-7} \, \text{M}" /> محلول تركيز كاتيونات الهيدرونيوم فيه يساوي <InlineMath math="10^{-10}" />.</li>
-            <li>يكون محلول حمضي عندما يكون <InlineMath math="[\text{H}_3\text{O}^+] > 1.0 \times 10^{-7}" /> ولكن بشرط أن تكون درجة الحرارة عند <InlineMath math="25 \, ^\circ\text{C}" /> وفي هذه الحالة تكون أكبر من <InlineMath math="\text{K}_w" /> درجة الحرارة أكثر من عند <InlineMath math="25 \, ^\circ\text{C}" /> وبالتالي <InlineMath math="1.0 \times 10^{-14}" />.</li>
+            <li>يكون محلول حمضي عندما يكون <InlineMath math="[\text{H}_3\text{O}^+] > 1.0 \times 10^{-7}" /> ولكن بشرط أن تكون درجة الحرارة عند <InlineMath math="25 \, ^\circ\text{C}" /> وفي هذه الحالة تكون أكبر من <InlineMath math="\text{Kw}" /> درجة الحرارة أكثر من عند <InlineMath math="25 \, ^\circ\text{C}" /> وبالتالي <InlineMath math="1.0 \times 10^{-14}" />.</li>
           </ul>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
@@ -490,9 +490,9 @@ export default function Ch3_Titration_pH_Final() {
                   <th className="p-4 border border-white/10">عند درجة حرارة أكبر من <InlineMath math="25 \, ^\circ\text{C}" /></th>
                 </tr>
                 <tr className="bg-white/5 text-cyan-400">
-                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] = \text{K}_w" /></th>
-                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] < \text{K}_w" /></th>
-                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] > \text{K}_w" /></th>
+                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] = \text{Kw}" /></th>
+                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] < \text{Kw}" /></th>
+                  <th className="p-4 border border-white/10 text-center"><InlineMath math="[\text{OH}^-][\text{H}_3\text{O}^+] > \text{Kw}" /></th>
                 </tr>
               </thead>
               <tbody className="text-gray-300 text-center">
@@ -716,7 +716,7 @@ export default function Ch3_Titration_pH_Final() {
 
           <SolvedExample 
             page="8"
-            question={<span>10/ جد تركيز ايون الهيدروكسيد في الماء عندما يكون <InlineMath math="\text{K}_w = 3 \times 10^{-15}" />؟</span>}
+            question={<span>10/ جد تركيز ايون الهيدروكسيد في الماء عندما يكون <InlineMath math="\text{Kw} = 3 \times 10^{-15}" />؟</span>}
             solution={
               <div className="space-y-4" dir="ltr">
                 <BlockMath math="[\text{OH}^-] [\text{H}_3\text{O}^+] = 3 \times 10^{-15}" />
