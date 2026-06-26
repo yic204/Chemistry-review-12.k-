@@ -222,9 +222,9 @@ export default function Ch3_Titration_pH_Final() {
                 هو حاصل ضرب <InlineMath math="[\text{H}_3\text{O}^+]" /> في <InlineMath math="[\text{OH}^-]" /> ثابت تأين الماء ويرمز له بـ <InlineMath math="\text{K}_w" />.
               </p>
               <div className="space-y-3 bg-black/40 p-6 rounded-2xl border border-white/5 font-mono text-cyan-300 text-1xl text-center">
-                <BlockMath math="\text w_{K} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
-                <BlockMath math="\text w_{K} = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
-                <BlockMath math="\text w_{K} = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
+                <BlockMath math="\text {Kw} = [\text{H}_3\text{O}^+] \times [\text{OH}^-]" />
+                <BlockMath math="\text {Kw} = 1.0 \times 10^{-7} \times 1.0 \times 10^{-7}" />
+                <BlockMath math="\text {Kw} = 1.0 \times 10^{-14} \quad \text{عند درجة } 25 \, ^\circ\text{C}" />
                 </div>
              </div>
            </div>
@@ -513,9 +513,9 @@ export default function Ch3_Titration_pH_Final() {
                   <td className="p-4 border border-white/10"><InlineMath math="[\text{OH}^-] = [\text{H}_3\text{O}^+] > 10^{-7}" /></td>
                 </tr>
                 <tr>
-                  <td className="p-4 border border-white/10"><InlineMath math="\text{K}_w = 10^{-14}" /></td>
-                  <td className="p-4 border border-white/10"><InlineMath math="\text{K}_w < 10^{-14}" /></td>
-                  <td className="p-4 border border-white/10"><InlineMath math="\text{K}_w > 10^{-14}" /></td>
+                  <td className="p-4 border border-white/10"><InlineMath math="\text{Kw} = 10^{-14}" /></td>
+                  <td className="p-4 border border-white/10"><InlineMath math="\text{Kw} < 10^{-14}" /></td>
+                  <td className="p-4 border border-white/10"><InlineMath math="\text{Kw} > 10^{-14}" /></td>
                 </tr>
               </tbody>
             </table>
