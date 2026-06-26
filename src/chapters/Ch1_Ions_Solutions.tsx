@@ -661,7 +661,7 @@ export default function Ch1_Ions_Solutions() {
             الترسيب يعد مثالا على تفاعلات الاستبدال الثنائي.
           </TeacherNote>
 
-          <SolvedExample 
+          <SolvedExample  
             page="16"
             question="س / يتفاعل كبريتيد الامونيوم مع نترات الكادميوم لتكوين كبريتيد الكادميوم و نترات الامونيوم"
             solution={
@@ -676,7 +676,7 @@ export default function Ch1_Ions_Solutions() {
                 </div>
                 <div>
                   <h6 className="text-cyan-400 font-bold mb-2">3/ المعادلة الايونية الصرفة:</h6>
-                  <BlockMath math={`Cd^{2+_{(aq)}} + S^{2-}_{(aq)} \\rightarrow CdS_{(s)}`} />
+                  <BlockMath math={`Cd^{2+}_{(aq)} + S^{2-}_{(aq)} \\rightarrow CdS_{(s)}`} />
                 </div>
               </div>
             }
