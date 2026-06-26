@@ -666,7 +666,7 @@ export default function Ch1_Ions_Solutions() {
             question="س / يتفاعل كبريتيد الامونيوم مع نترات الكادميوم لتكوين كبريتيد الكادميوم و نترات الامونيوم"
             solution={
               <div className="space-y-6">
-                <div>
+              <div>
                   <h6 className="text-cyan-400 font-bold mb-2">1/ المعادلة بالصيغ (تفاعل استبدال الثنائي):</h6>
                   <BlockMath math={`(NH_4)_2S_{(aq)} + Cd(NO_3)_{2(aq)} \\rightarrow CdS_{(s)} + 2NH_4NO_{3(aq)}`} />
                 </div>
