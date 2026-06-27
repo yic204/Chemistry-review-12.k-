@@ -1270,7 +1270,7 @@ export default function Ch3_Titration_pH_Final() {
             page="22"
             label="قانون المعايرة"
           >
-            {String.raw`\frac{M_a V_a}{n_a} = \frac{M_b V_b}{n_b}`}
+            {String.raw`M_a \\times V_a \\times H^+ = M_b \\times V_b \\times OH^-`}
           </FormulaBox>
           <p className="text-center text-gray-400 mb-10" dir="rtl">حيث a ترمز للحمض و b ترمز للقاعدة، و n هي المعاملات في المعادلة الموزونة.</p>
 
