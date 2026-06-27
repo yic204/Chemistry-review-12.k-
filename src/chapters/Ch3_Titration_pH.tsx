@@ -1440,22 +1440,22 @@ export default function Ch3_Titration_pH_Final() {
                <p className="text-2xl font-black text-white break-words whitespace-normal leading-relaxed">أبنائي الطلبة، إليكم ملخص القوانين الذهبية لهذا الفصل:</p>
                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left font-mono" dir="ltr">
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="[\\text{H}_3\\text{O}^+][\\text{OH}^-] = 10^{-14}" />
+                     <BlockMath math={String.raw`[H_3O^+][OH^-] \qquad\qquad = 10^{-14}`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="\\text{pH} + \\text{pOH} = 14" />
+                     <<BlockMath math={String.raw`pH + pOH \qquad\qquad = 14`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="\\text{pH} = -\\log[\\text{H}_3\\text{O}^+]" />
+                     <BlockMath math={String.raw`pH \qquad\qquad = -\log[H_3O^+]`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="\\text{pOH} = -\\log[\\text{OH}^-]" />
+                     <BlockMath math={String.raw`pOH \qquad\qquad = -\log[OH^-]`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="[\\text{H}_3\\text{O}^+] = 10^{-\\text{pH}}" />
+                     <BlockMath math={String.raw`[H_3O^+] \qquad\qquad = 10^{-pH}`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <BlockMath math="[\\text{OH}^-] = 10^{-\\text{pOH}}" />
+                     <BlockMath math={String.raw`[OH^-] \qquad\qquad = 10^{-pOH}`} />
                   </div>
                </div>
                <p className="text-xl text-cyan-400 font-bold mt-8 break-words whitespace-normal leading-relaxed">تذكروا دائماً: الدقة في الحسابات الكيميائية تبدأ من كتابة المعادلة الموزونة بشكل صحيح.</p>
