@@ -77,12 +77,6 @@ const TABS: Tab[] = [
     icon: HelpCircle,
     component: MinisterialQuiz
   }
-    {
-    id: 'Simulator',
-    title: 'المحاكيات',
-    icon: HelpCircle,
-    component: MinisterialQuiz
-  }
 ];
 
 // --- Loading Component (Glassmorphism) ---
