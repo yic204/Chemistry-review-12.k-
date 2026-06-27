@@ -1443,7 +1443,7 @@ export default function Ch3_Titration_pH_Final() {
                      <BlockMath math={String.raw`[H_3O^+][OH^-] \qquad\qquad = 10^{-14}`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
-                     <<BlockMath math={String.raw`pH + pOH \qquad\qquad = 14`} />
+                     <BlockMath math={String.raw`pH + pOH \qquad\qquad = 14`} />
                   </div>
                   <div className="p-4 bg-black/40 rounded-xl border border-white/10">
                      <BlockMath math={String.raw`pH \qquad\qquad = -\log[H_3O^+]`} />
